@@ -1,11 +1,12 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import Blaze from 'meteor/gadicc:blaze-react-component';
-import { Container } from 'semantic-ui-react';
-import { Button } from 'semantic-ui-react';
-import { Grid } from 'semantic-ui-react';
-import { Modal, Dropdown, Input, List, Segment } from 'semantic-ui-react';
-import { Header } from 'semantic-ui-react';
+
+import NeedsList from './components/NeedsList';
+import AssignNeedToResponsibility from './components/AssignNeedToResponsibility';
+import AddNode from './components/AddNode';
+
+import { Grid, Button, Container, Dropdown, Header, Input, List, Segment } from 'semantic-ui-react';
 
 const emptyNode = {
   text: '',
@@ -107,55 +108,4 @@ class Cushions extends React.Component {
 }
 
 export default Cushions;
-
-
-const options = [
-  { key: 'page', text: 'NEED', value: 'need' },
-  { key: 'org', text: 'RESPONSIBILITY', value: 'resp' },
-  { key: 'site', text: 'DEPENDENCY', value: 'depe' },
-];
-
-const AddNode = ({onNodeTextChange, onNodeTypeChange, node}) => (
-  <Input
-    action={<Dropdown onChange={onNodeTypeChange} button basic floating options={options} value={node.type} />}
-    icon='genderless'
-    iconPosition='left'
-    placeholder='Add a Node'
-    onChange={onNodeTextChange}
-    value={node.text}
-  />
-);
-
-const AssignNeedToResponsibility = ({ isOpen, onClose, onConfirm }) => (
-  <Modal size={'small'} open={isOpen} onClose={onClose}>
-    <Modal.Header>
-      Select a Need to Assign Responsibility to
-    </Modal.Header>
-    <Modal.Content>
-
-    </Modal.Content>
-    <Modal.Actions>
-      <Button negative onClick={onClose}>
-        Skip
-      </Button>
-      <Button positive onClick={onConfirm} >Assign </Button>
-    </Modal.Actions>
-  </Modal>
-);
-
-const NeedsList = (props) => (
-  <List selection divided verticalAlign='middle'>
-    {props.needs.map((need) => (
-      <List.Item>
-        <List.Content>
-          <List.Header>
-            {need.text}
-          </List.Header>
-          {need.guide}
-        </List.Content>
-      </List.Item>
-    ))}
-  </List>
-)
-
 

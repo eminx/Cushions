@@ -1,1 +1,28 @@
 /* CSS declarations go here */
+
+* {box-sizing: border-box;}
+
+#theFrameOfEverything {
+	width: 100%;
+	height: 100%;
+}
+
+#theArtistsFrame {
+	width: 100%;
+	height: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.aColumn {
+	padding: 1rem;
+}
+
+.ui.grid {
+	height: 100%;
+}
+
+.textAlign-center {
+	text-align: center;
+}

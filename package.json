@@ -2,7 +2,8 @@
   "name": "cushions",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "deploy": "DEPLOY_HOSTNAME=eu-west-1.galaxy-deploy.meteor.com meteor deploy --settings settings-production.json cushions.eu.meteorapp.com"
   },
   "eslintConfig": {
     "parser": "babel-eslint",

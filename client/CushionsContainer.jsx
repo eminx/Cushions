@@ -10,25 +10,21 @@ class CushionsContainer extends React.Component {
 	}
 
   componentDidMount() {
-    this.getNeedsFromDB();
-    this.getUsersFromDB();
+    setTimeout(() => {
+      this.getNeedsFromDB();
+      this.getUsersFromDB();
+    }, 1000);
   }
 
   getNeedsFromDB() {
-    const self = this;
-    setTimeout(function() {
-      const needs = Needs.find().fetch();
-      self.setState({needs: needs.reverse()});
-    }, 1000);
+    const needs = Needs.find().fetch();
+    this.setState({needs: needs.reverse()});
   }
 
   getUsersFromDB() {
-    const self = this;
-    setTimeout(function() {
-      const users = Meteor.users.find().fetch();
-      const members = self.compileUsers(users);
-      self.setState({allMembers: members});
-    }, 1000);
+    const users = Meteor.users.find().fetch();
+    const members = this.compileUsers(users);
+    this.setState({allMembers: members});
   }
 
   compileUsers = (usersList) => {

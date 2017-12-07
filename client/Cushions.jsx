@@ -92,6 +92,9 @@ class Cushions extends React.Component {
               <Header as='h2' color='pink'>
                 ¯\_(ツ)_/¯
               </Header>
+              <Header as='h3' color='purple'>
+                I imagine that in here we have a graph drawn with Canvas API or similar
+              </Header>
             </div>
             </Grid.Column>
             <Grid.Column width={4} className={'rightBar aColumn'}>

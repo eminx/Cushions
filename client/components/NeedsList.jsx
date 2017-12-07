@@ -10,7 +10,8 @@ const NeedsList = (props) => (
           <List.Header>
             {need.text}
           </List.Header>
-          {need.guide}
+            <List.Item>guide: <b>{need.guide}</b></List.Item>
+            <List.Item>facilitator: unassigned</List.Item>
         </List.Content>
       </List.Item>
     ))}

@@ -24,7 +24,7 @@ The reason I started up this with Meteor is that it's super easy to get hands di
 - Emails sending configuration very easy.
 
 
-And then, we can always just copy the UI we have here, since it's reusable React components, and just migrate it to another app setup when/if we have it in place configured ot be working.
+And then, we can always just copy the UI we have here, since it's reusable React components, and just migrate it to another app setup when/if we have it in place configured to	 be working.
 
 
 ## Installation
@@ -37,7 +37,7 @@ And then, we can always just copy the UI we have here, since it's reusable React
 
 4. Go to the repo: ```cd Cushions```
 
-5. Run ```meteor npm install```
+5. Run ```npm install```
 
 Your installation should be finished. Just do this to run the app:
 

@@ -1,6 +1,6 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
-import Cushions from './Cushions.jsx';
+import Cushions from './Cushions';
 
 class CushionsContainer extends React.Component {
 	state = {

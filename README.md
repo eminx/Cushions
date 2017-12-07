@@ -37,7 +37,7 @@ And then, we can always just copy the UI we have here, since it's reusable React
 
 4. Go to the repo: ```cd Cushions```
 
-5. Run ```npm install```
+5. Run ```meteor npm install```
 
 Your installation should be finished. Just do this to run the app:
 

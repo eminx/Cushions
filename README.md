@@ -19,9 +19,10 @@ The reason I started up this with Meteor is that it's super easy to get hands di
 
 - User Accounts system with ready-to-use configurations and validation, AND social signups (FB, G, T, Github etc.)
 - Automatic data syncing between server and client via DDP
-- MongoDB, Web Sockets etc builtin, working without any hustle.
+- MongoDB, Web Sockets etc builtin, working without any hustle
+- Ability to easily use Cordova to generate Android and IOS apps
 - Super easy hosting at Galaxy (little pricy but worth it)
-- Emails sending configuration very easy.
+- Email sending configuration very easy
 
 
 And then, we can always just copy the UI we have here, since it's reusable React components, and just migrate it to another app setup when/if we have it in place configured to	 be working.

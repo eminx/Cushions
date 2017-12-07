@@ -44,3 +44,12 @@ Your installation should be finished. Just do this to run the app:
 ```meteor run```
 
 And go to: ```localhost:3000``` on your favourite browser.
+
+## Documentations
+
+Semantic UI React: https://react.semantic-ui.com
+
+React JS: https://reactjs.org/docs
+
+Meteor: http://docs.meteor.com/#/full/
+
